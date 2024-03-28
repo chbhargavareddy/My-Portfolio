@@ -13,6 +13,8 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResponsivePcOrWebDirective } from './directives/responsive-pc-or-web.directive';
+import { NavbarComponent } from './navbar/navbar.component';
+import { VolunteeringComponent } from './volunteering/volunteering.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ResponsivePcOrWebDirective } from './directives/responsive-pc-or-web.di
     CertificationsComponent,
     ProjectsComponent,
     ContactComponent,
-    ResponsivePcOrWebDirective
+    ResponsivePcOrWebDirective,
+    NavbarComponent,
+    VolunteeringComponent
   ],
   imports: [
     BrowserModule,

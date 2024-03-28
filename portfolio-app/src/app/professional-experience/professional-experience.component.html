@@ -1,1 +1,25 @@
-<p>professional-experience works!</p>
+<div class="container">
+    <h1 class="section-title">Professional Experience</h1>
+
+    <div *ngFor="let professionalExperience of experiences" class="experience">
+        <div class="experience-header">
+            <h2 class="professionalExperience-title">{{ professionalExperience.title }}</h2>
+            <h3 class="professionalExperience-details">{{ professionalExperience.date }}</h3>
+        </div>
+
+        <div class="role-tech">
+            <h3 class="professionalExperience-details">
+                <span>Role:</span>
+                <span>{{ professionalExperience.role }}</span>
+            </h3>
+            <h3 class="professionalExperience-details">
+                <span>Tech Stack:</span>
+                <span>{{ professionalExperience.techStack }}</span>
+            </h3>
+        </div>
+
+        <ul class="professionalExperience-description">
+            <li *ngFor="let desc of professionalExperience.description">{{ desc }}</li>
+        </ul>
+    </div>
+</div>

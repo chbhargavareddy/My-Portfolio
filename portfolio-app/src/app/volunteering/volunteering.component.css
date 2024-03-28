@@ -1,0 +1,72 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.volunteering-list {
+    margin-top: 20px;
+}
+
+.volunteering-item {
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.volunteering-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.volunteering-header {
+    display: flex;
+    align-items: center;
+}
+
+.volunteering-logo {
+    width: 80px;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px;
+    /* Add spacing between the logo and info */
+}
+
+.volunteering-info {
+    flex: 1;
+    /* Allow the info to take up remaining space */
+}
+
+.volunteering-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.volunteering-date {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.volunteering-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Create a grid with auto-fill columns, each with a minimum width of 200px */
+    grid-gap: 20px;
+    /* Add a gap between grid items */
+    margin-top: 20px;
+    /* Add spacing between images and info */
+}
+
+.volunteering-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Add border-radius for rounded corners */
+}

@@ -1,1 +1,13 @@
-<p>technical-skills works!</p>
+<div class="container">
+    <h1>Technical Skills</h1>
+
+    <section *ngFor="let skill of skills" class="skill">
+        <h2>{{ skill.name }}</h2>
+        <h4>{{ skill.level }}</h4>
+
+        <div class="rating">
+            <div class="bar" [ngClass]="getBarColorClass(skill.rating)" [style.width.%]="skill.rating"></div>
+            <div>{{ skill.rating }}%</div>
+        </div>
+    </section>
+</div>
