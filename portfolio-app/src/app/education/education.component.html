@@ -1,1 +1,11 @@
-<p>education works!</p>
+<div class="container">
+    <h1 class="section-title">Education</h1>
+
+    <div class="education-list">
+        <div *ngFor="let education of educationList" class="education-item">
+            <h2 class="course">{{education.course}} <span class="place">{{education.place}}</span></h2>
+            <h3 class="institute">{{education.institute}}</h3>
+            <h4 class="duration">{{education.duration}}</h4>
+        </div>
+    </div>
+</div>

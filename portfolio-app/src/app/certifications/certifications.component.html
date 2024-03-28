@@ -1,1 +1,14 @@
-<p>certifications works!</p>
+<div class="container">
+    <h1 class="section-title">Certifications</h1>
+
+    <div class="certifications-list">
+        <div *ngFor="let certification of certificationsList" class="certification-item">
+            <img [src]="certification.image" alt="Certificate Image" class="certification-image">
+            <div class="certification-details">
+                <h2 class="certification-title">{{ certification.list }}</h2>
+                <h3 class="certification-date">{{ certification.date }}</h3>
+                <a [href]="certification.link" target="_blank" class="view-certificate">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
