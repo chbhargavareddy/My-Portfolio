@@ -1,33 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
 :root {
-    --green: #69F0AE;
-    --green-light: #B9F6CA;
-    --gray-light: #BDBDBD;
-    --dark-gray: #263238;
-    --black: #212121;
+    --green: #4caf50;
+    /* Updated green color */
+    --green-light: #8bc34a;
+    /* Lighter shade of green */
+    --gray-light: #e0e0e0;
+    /* Light gray color */
+    --dark-gray: #333;
+    /* Dark gray color */
+    --black: #000;
+    /* Black color */
 }
 
 * {
-    margin: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Poppins', sans-serif;
+    /* Use Poppins font for the body */
+    background-color: #f5f5f5;
+    /* Light background color */
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1500px;
-    outline: 0px solid white;
+    max-width: 1200px;
+    /* Reduced max-width for better readability */
+    padding: 0 20px;
+    /* Add some padding to the container */
 }
 
 h1 {
-    padding: 1rem 0;
+    padding: 20px 0;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--green);
-    outline: 1px solid white;
     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    /* Increased font weight for emphasis */
+    text-transform: uppercase;
+    /* Uppercase text */
+    font-size: 36px;
+    /* Increased font size */
+    margin-bottom: 20px;
+    /* Added margin-bottom for spacing */
 }
+
+/* Add more styles as needed */
