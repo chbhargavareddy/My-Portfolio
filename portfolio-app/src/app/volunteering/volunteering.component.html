@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="section-title">Volunteering</h1>
+
+    <div class="volunteering-list">
+        <div *ngFor="let volunteering of volunteeringList" class="volunteering-item">
+            <div class="volunteering-details">
+                <div class="volunteering-header">
+                    <img [src]="volunteering.logo" alt="Volunteering Logo" class="volunteering-logo">
+                    <div class="volunteering-info">
+                        <h2 class="volunteering-title">{{ volunteering.list }}</h2>
+                        <h3 class="volunteering-date">{{ volunteering.date }}</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Iterate over the images array to display each image -->
+            <div class="volunteering-images">
+                <div *ngFor="let imageUrl of volunteering.images">
+                    <img [src]="imageUrl" alt="Volunteering Image" class="volunteering-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

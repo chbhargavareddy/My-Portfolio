@@ -4,6 +4,11 @@
     <div *ngFor="let project of projects" class="project">
         <h2 class="project-title">{{ project.title }}</h2>
 
+        <h3 class="project-date">
+            <span>Date:</span>
+            <span>{{ project.date }}</span>
+        </h3>
+
         <h3 class="project-technologies">
             <span>Technologies:</span>
             <span>{{ project.technologies }}</span>

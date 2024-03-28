@@ -13,6 +13,7 @@ export interface Certifications {
 
 export interface Project {
   title: string;
+  date: string;
   technologies: string;
   description: string[];
 }
@@ -31,4 +32,11 @@ export interface Skill {
   level:string;
   rating: number;
 
+}
+
+export interface Volunteering {
+  list:string;
+  logo:string;
+  date:string;
+  images: string[];
 }

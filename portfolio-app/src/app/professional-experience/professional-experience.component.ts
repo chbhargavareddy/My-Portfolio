@@ -9,7 +9,7 @@ import { ProfessionalExperience } from '../models/models';
 export class ProfessionalExperienceComponent {
   experiences: ProfessionalExperience[] = [
     {
-      title: 'Nationwide Insurance',
+      title: 'Nationwide Insurance | Ohio, USA',
       techStack: 'Java | Spring Boot | Angular | Typescript | Concourse | Harness | Rest API |AWS | Postman | TypeScript | Jenkins | New Relic | Pharos',
       date: 'June 2021 - Present ',
       role: 'Full Stack Developer',
@@ -24,13 +24,23 @@ export class ProfessionalExperienceComponent {
       ]
     },
     {
-      title: 'University Of North Texas',
+      title: 'University Of North Texas | Denton, USA',
       techStack: 'Angular | Jasmine | Karma | Grails | HTML | CSS | JavaScript | Jenkins',
       date: 'January 2021 – June 2021',
       role: 'Software Engineer',
       description: [
         'Developed Static UI pages using Angular and Implemented Template migration from Salesforce to Twilio SendGrid which involved in Html, CSS, JavaScript coding.',
         'Spearheaded the adoption of Test-Driven Development approach to API development and improved code quality by 15%.'
+      ]
+    },
+    {
+      title: 'Electronic Corporation at India Limited (ECIL) | Hyderabad, India',
+      techStack: 'Java | Rest API | AWS | Spring | Postman ',
+      date: 'April 2017 – August 2017 ',
+      role: 'Software Intern',
+      description: [
+        'Optimized the architecture of the existing application by migrating to a microservices architecture using Rest APIs, Spring Boot, and hosted on AWS Cloud Services decreasing latency by 25%.',
+        'Applied theoretical knowledge to real-world problems, enhancing both technical skills and understanding of industry practices.'
       ]
     },
     // Add more experiences as needed
