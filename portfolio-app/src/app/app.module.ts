@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResponsivePcOrWebDirective } from './directives/responsive-pc-or-web.directive';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VolunteeringComponent } from './volunteering/volunteering.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { VolunteeringComponent } from './volunteering/volunteering.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
   ],
   providers: [
     provideClientHydration()

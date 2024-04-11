@@ -1,0 +1,36 @@
+/* Add your styles here */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Style for each component */
+:host app-header {
+    display: block;
+    margin-bottom: 20px;
+}
+
+:host app-about,
+:host app-summary,
+:host app-technical-skills,
+:host app-professional-experience,
+:host app-education,
+:host app-certifications,
+:host app-volunteering,
+:host app-projects {
+    display: block;
+    margin-bottom: 40px;
+}
+
+/* Navbar styles */
+:host app-navbar {
+    display: block;
+    margin-bottom: 20px;
+}
