@@ -8,10 +8,11 @@ import { TechnicalSkillsComponent } from './technical-skills/technical-skills.co
 import { ProfessionalExperienceComponent } from './professional-experience/professional-experience.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { VolunteeringComponent } from './volunteering/volunteering.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: AppComponent },
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'summary', component: SummaryComponent },
   { path: 'technical-skills', component: TechnicalSkillsComponent },
@@ -19,6 +20,8 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'certifications', component: CertificationsComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'volunteering', component: VolunteeringComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

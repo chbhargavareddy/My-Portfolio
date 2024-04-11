@@ -1,31 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
 .container {
-    max-width: 800px;
+    display: flex;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.profile {
+    flex: 1;
+    margin-right: 2rem;
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-ul {
+.content {
+    flex: 2;
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.name {
+    margin-bottom: 1.5rem;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.full-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.job-title {
+    font-size: 1.3rem;
+    color: #777;
+}
+
+.summary {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.additional-info {
+    margin-top: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.interests,
+.roles,
+.youtube-video {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.youtube-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.youtube-link:hover {
+    text-decoration: underline;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    height: 315px;
+    /* Adjust the height as needed */
+    border: none;
+    margin-top: 1rem;
+}
+
+/* Existing styles */
+
+/* Font Awesome icons */
+.social-links ul li i {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.social-links ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.social-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments */
+.social-links p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social-links ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-li {
-    font-size: 16px;
-    margin-bottom: 5px;
+.social-links ul li {
+    margin-bottom: 1rem;
 }

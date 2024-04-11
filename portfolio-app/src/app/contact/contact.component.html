@@ -1,1 +1,25 @@
-<p>contact works!</p>
+<section class="contact">
+    <div class="container">
+        <h2 class="heading">Get In Touch</h2>
+        <p class="sub-heading">Have a sweet project in mind or just want to say hi? Feel free to send me a message by
+            filling out the form below and hitting the Send button!</p>
+        <div class="form-container">
+            <form (ngSubmit)="submitForm()">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" [(ngModel)]="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" [(ngModel)]="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" [(ngModel)]="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" [(ngModel)]="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
